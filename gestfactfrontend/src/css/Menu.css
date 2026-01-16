@@ -1,0 +1,343 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    font-family: 'Poppins',sans-serif;
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+:root {
+
+    --body-color:white ;
+    --sidebar-color:#78C2FF;
+    --primary-color:rgb(54, 54, 146);
+    --primary-color-light:#F6F5FF;
+    --toggle-color:#DDD;
+    --text-color:#707070;
+}
+
+body{
+    height: 100vh;
+    background: var(--body-color);
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width:20%;
+    background-color: var(--sidebar-color);
+}
+.Menu .LOGO{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    font-size:small;
+    font-weight:lighter;
+    margin-top: 4%;
+}
+.Menu .LOGO img {
+    width: 50%;
+    height: 50%;
+    margin-top: 15%;
+    margin-bottom: 10%;
+}
+.Menu .LOGO h2{
+    font-size:x-large;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    color: white;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.Menu .Profil{
+    display: flex;
+    flex-direction:row;
+    margin: 8%;
+    margin-top: 8%;
+    height: 45px;
+    align-items: center;
+    border-radius: 10px;
+    background-color: #ffffff;
+}
+
+.Menu .Profil svg{
+    margin:10%
+}
+
+.Menu .Profil-Link-css{
+    text-decoration: none;
+    font-weight:600;
+    color: var(--sidebar-color);
+
+}
+
+.Menu .green-circle{
+    width: 8px; 
+    height: 8px; 
+    border-radius: 50%; 
+    background-color: green;
+    margin-right: 3%;
+}
+.Menu .Infos-css{
+    width: 100%;
+    font-size:small;
+}
+.Menu .Infos-css small{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-weight: 400;
+}
+
+.Menu .Infos-css p{
+    margin: 0%;
+
+}
+.Menu .Infos-css {
+    margin: 5%;
+}
+
+.Menu .menu-links-css{
+    margin-left: 10%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10%;
+}
+.Menu .menu-links-css li{
+    margin-top: 10%;
+    height: 30px;
+    list-style: none;
+}
+.Menu .menu a{
+    text-decoration: none;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+.Menu .menu-links-css li:hover{
+    background-color: rgb(255, 255, 255);
+    padding-left: 5%;
+    padding-bottom: 8%;
+    padding-top: 8%;
+    margin-bottom: 0.5%;
+    border-radius: 9px 0px 0px 9px;
+    color:var(--sidebar-color) 
+}
+.menu-links-css li:hover svg path {
+    fill: var(--sidebar-color); /* Changement de couleur du remplissage au survol */
+}
+
+.Menu .nav-links-css li:hover{
+    background-color: rgb(255, 255, 255);
+    padding: 0%;
+    margin-bottom: 0.5%;
+    border-radius: 9px 0px 0px 9px;
+    color:var(--sidebar-color) 
+}
+.nav-links-css li:hover svg path {
+    fill: var(--sidebar-color); /* Changement de couleur du remplissage au survol */
+}
+
+.sidebar li a{
+    color: #ffffff;
+}
+
+.Mode{
+    font-size: 15px;
+    margin-left: 7%;
+}
+
+.Menu .Mode-Deconnexion i{
+    font-size: 25px;
+}
+
+.Menu .Mode-Deconnexion a :hover{
+    font-size: 30px;
+    color: grey;
+}
+
+.Menu .Mode-Deconnexion  a{
+    color: #F6F5FF;
+}
+
+.Menu .Mode-Deconnexion{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color: #ffffff;
+
+}
+
+
+.Mode-Deconnexion {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    margin-bottom: 10%;
+}
+
+
+@media (min-height: 692px) { 
+    .Menu .LOGO h2{
+        margin-top: 5%;
+    }
+    .Menu .Profil {
+        margin-bottom: 15%;
+        margin-top: 10%;
+    }
+    .Menu .LOGO img{
+        margin-top: 10%;
+    }
+    .Menu .menu-links-css li{
+        margin-bottom: 4%;
+    }
+
+}
+
+a {
+    text-decoration: none;
+}
+  
+li {
+    list-style: none;
+}
+
+/* NAVBAR STYLING STARTS */
+nav .Mode-Deconnexion  a{
+    color: #F6F5FF;
+    font-size:30px;
+}
+nav .Mode-Deconnexion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    color: #ffffff;
+    margin: 0%;
+    font-size: larger;
+    margin-left: 5%;
+    padding-top: 1%;
+}
+.Mode-Deconnexion a :hover{
+    font-size: 30px;
+    color: grey;
+}
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px;
+    background-color:var(--sidebar-color);
+    color: #fff;
+}
+.nav-links-css  {
+    margin-top: 4%;
+
+}  
+.nav-links-css a {
+    color: #fff;
+}
+
+.nav-links-css a:hover{
+    color: var(--sidebar-color);
+}
+.nav-links-css svg{
+    margin-right: 4%;
+}
+/* LOGO */
+.Nav-logo img {
+    width: 50%;
+    height: 20%;
+    margin-top: 3%;
+    margin-left: 20%;
+}
+  
+/* NAVBAR MENU */
+.Nav-menu {
+    display: flex;
+    gap: 1em;
+    font-size: 18px;
+}
+
+.Nav-menu li:hover {
+    background-color: var(--sidebar-color);
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+  
+.Nav-menu li {
+    padding: 5px 14px;
+}
+
+.nav-links-css input[type=checkbox] {
+    display: none;
+} 
+  
+  /* HAMBURGER MENU */
+.toggle {
+    display: none;
+    font-size: 35px;
+    user-select: none;
+}
+.toggle:hover {
+    color:grey;
+}
+
+.Mynav a{
+    text-decoration: none;
+}
+
+  /* APPLYING MEDIA QUERIES */
+@media (max-width: 1072px) {
+   .Nav-menu {
+      display:none;
+      position: absolute;
+      background-color:var(--sidebar-color);
+      right: 0;
+      left: 0;
+      text-align: center;
+      padding: 16px 0;
+      margin-top: 5%;
+    }
+
+    .Nav-menu li:hover {
+      display: inline-block;
+      background-color:white;
+      transition: 0.3s ease;
+    }
+
+    .Nav-menu li + li {
+      margin-top: 12px;
+    }
+  
+    .nav-links-css input[type=checkbox]:checked ~ .Nav-menu {
+      display: block;
+    }
+  
+    .toggle {
+      display: block;
+      margin-right: 30px;
+      margin-top: -5%;
+    }
+  
+    .nav-links-css .icon{
+        font-size: 25px;
+        margin-right: 15px;
+    }
+  }
+
+@media (max-width: 1072px) { 
+    .Menu{
+        display: none;
+    }
+}
+@media (min-width: 1072px) { 
+    .Mynav{
+        display: none;
+    }
+}

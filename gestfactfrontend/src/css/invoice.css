@@ -1,0 +1,183 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 5%;
+  margin-top: 7%;
+}
+center h1{
+    margin-top: 5%;
+    color: var(--sidebar-color);
+}
+.input-container {
+  display: flex;
+  flex-wrap: wrap; /* Permettre le retour à la ligne des champs d'entrée */
+  justify-content: space-between; /* Pour espacer également les champs d'entrée */
+  margin-bottom: 20px; /* Augmentez l'espace entre les lignes de champs d'entrée */
+}
+
+.input-container input {
+  width: calc(30% - 10px); /* Calculer la largeur de chaque champ d'entrée avec un espace entre eux */
+  padding: 10px;
+  margin-bottom: 10px; /* Ajoutez de l'espace sous chaque champ d'entrée */
+}
+
+button {
+  width: 100%; /* Ajuster la largeur du bouton pour occuper toute la largeur du conteneur */
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Media query pour les écrans moyens */
+@media (max-width: 992px) {
+  .input-container input {
+    width: calc(50% - 10px); /* Sur les écrans moyens, afficher deux entrées par ligne */
+  }
+}
+
+/* Media query pour les écrans plus petits */
+@media (max-width: 768px) {
+  .input-container input {
+    width: calc(100% - 10px); /* Sur les écrans plus petits, afficher une entrée par ligne */
+  }
+}
+
+.button-container {
+  margin-top: 20px;
+  width: 100%; /* Ajuster la largeur du conteneur du bouton */
+}
+
+button {
+  width: calc(100% - 20px); /* Ajuster la largeur du bouton avec une marge de 10px de chaque côté */
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+.button-container {
+  display: flex;
+  justify-content: center; /* Centrer horizontalement */
+  align-items: center; /* Centrer verticalement */
+  margin-top: 20px;
+  width: 100%; /* Ajuster la largeur du conteneur du bouton */
+}
+
+button {
+  width: calc(40% - 20px); /* Ajuster la largeur du bouton avec une marge de 10px de chaque côté */
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.item{
+    display: flex;
+    flex-direction: column;
+}
+.item input{
+    width: 100%;
+}
+
+
+.input-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.input-container .item {
+  width: calc(25% - 10px);
+  margin-bottom: 10px;
+}
+
+.input-container input,
+.input-container select {
+  width: 100%; /* Assurez-vous que tous les éléments aient la même largeur */
+  padding: 10px;
+  border: 1px solid #ccc; /* Ajoutez une bordure pour un design cohérent */
+  border-radius: 5px;
+}
+
+.input-container input:focus,
+.input-container select:focus {
+  border-color: #007bff; /* Changer la couleur de la bordure lorsqu'un élément est activé */
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Ajouter une ombre autour de l'élément lorsqu'il est activé */
+  outline: none; /* Supprimer la bordure autour de l'élément par défaut */
+}
+
+
+
+/* Media query pour les écrans moyens */
+@media (min-width: 1072px) {
+  .invoice{
+    margin-left: 20% ;
+  }
+}
+@media (max-width: 992px) {
+
+  button {
+    width: calc(50% - 10px); /* Sur les écrans moyens, afficher le bouton avec une largeur de 50% */
+  }
+}
+/* Media query pour les écrans plus petits */
+@media (max-width: 768px) {
+  button {
+    width: calc(50% - 20px); /* Sur les écrans plus petits, afficher le bouton avec une largeur de 100% */
+  }
+}
+/* Ajoutez ces styles à la fin de votre fichier CSS */
+
+/* Media query pour les écrans de taille moyenne */
+@media (max-width: 992px) {
+  .input-container .item {
+    width: calc(50% - 10px); /* Sur les écrans moyens, afficher deux entrées par ligne */
+  }
+}
+
+/* Media query pour les écrans plus petits */
+@media (max-width: 768px) {
+  .input-container .item {
+    width: calc(100% - 10px); /* Sur les écrans plus petits, afficher une entrée par ligne */
+  }
+
+  button {
+    width: calc(100% - 20px); /* Sur les écrans plus petits, ajustez la largeur du bouton pour occuper toute la largeur */
+  }
+}
+
+/* Style pour le select */
+.selectrole {
+  width: 80%;
+  padding: 8px;
+  box-sizing: border-box;
+  border-radius: 4px;
+  font-size: 1rem;
+  line-height: 1.5;
+  background-color: white;
+/* color: #495057; */
+}
+
+.selectFact {
+  background-color: white;
+}

@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/static/css/main.c016ad7d.css",
+    "main.js": "/static/js/main.35613d3d.js",
+    "static/media/loginImg.jpg": "/static/media/loginImg.81d527675a0effacfcb1.jpg",
+    "static/media/LOGO-HEADER-WINBEST-CLIMATISATION-SOCIETE-CLIMATISATION-CASABLANCA.webp": "/static/media/LOGO-HEADER-WINBEST-CLIMATISATION-SOCIETE-CLIMATISATION-CASABLANCA.65a95a1a23b3ec1cc4c5.webp",
+    "index.html": "/index.html",
+    "main.c016ad7d.css.map": "/static/css/main.c016ad7d.css.map",
+    "main.35613d3d.js.map": "/static/js/main.35613d3d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c016ad7d.css",
+    "static/js/main.35613d3d.js"
+  ]
+}

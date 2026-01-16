@@ -1,0 +1,290 @@
+
+.GestionCompte{
+    padding-bottom: 1%;
+}
+
+.GestionCompte .container {
+  display: flex;
+  justify-content: space-around; /* Utilise 'space-around' pour une meilleure répartition */
+  padding: 20px;
+  flex-wrap: wrap; /* Permet aux boîtes de passer à la ligne sur les petits écrans */
+}
+
+.box {
+  width: 100%; /* Largeur de chaque boîte */
+  max-width: 300px;
+  height: 200px; /* Hauteur de chaque boîte */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centrage vertical du texte */
+  justify-content: space-evenly; /* Centrage horizontal du texte */
+  background-color: var(--sidebar-color); /* Couleur de fond pour les boîtes */
+  border: 2px solid white; /* Bordure des boîtes */
+  border-radius: 8px; /* Bordures arrondies */
+  margin: auto;
+  margin-top: 15%;
+  font-size: 18px; /* Taille de la police */
+  font-weight: bold; /* Gras pour le texte */
+  color: white; /* Couleur du texte */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Ombre portée pour un effet 3D */
+  transition: transform 0.3s ease-in-out, background-color 0.3s ease; /* Transition pour hover */
+}
+
+.box:hover {
+  transform: scale(1.05); /* Effet de zoom au survol */
+  background-color: #d1d1d1; /* Changement de couleur de fond au survol */
+  cursor: pointer;
+}
+
+.active {
+  background-color: #d1d1d1; /* Changement de couleur de fond au survol */
+
+}
+.active-top{
+    margin-top: 5% ;
+    height: 110px; 
+}
+.active svg{
+    width: 2em;
+    height: 2em;
+}
+
+/* GestionCompte.css */
+.form-add-user {
+    width: 80%;
+    margin: 20px auto;
+    padding: 5px;
+    background-color: #f8f9fa; /* Light grey background */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-add-user label {
+    margin-bottom: 5px;
+    color: #333; /* Dark grey color for text */
+    font-weight: 300;
+    margin-left: 2%;
+}
+
+.form-add-user input {
+    padding: 5px;
+    /* margin-bottom: 0px; */
+    border: 2px solid #ced4da; /* Light grey border */
+    border-radius: 4px;
+    font-size: 16px;
+    width: 100%;
+}
+.form-add-user input[type=text]{
+    min-width:65%;
+}
+
+.form-add-user input:focus {
+    border-color: #80bdff;
+    outline: none; /* Remove default focus outline */
+}
+
+.form-add-user button {
+    padding: 10px;
+    background-color: #007bff; /* Bootstrap primary blue */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.form-add-user button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Responsive styling for form inputs */
+.form-add-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.form-add-row .form-group {
+    flex: 1 1 30%; /* Take up nearly half of the row, with some space in between */
+    min-width: 240px; /* Minimum width before wrapping */
+}
+
+.form-add-row .form-group{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 1%;
+}
+
+
+.form-add-row-select{
+    width: 60%;
+}
+.form-add-row-select select{
+    width: 100%;
+    border: 2px solid #ced4da;
+}
+.user-ta
+.user-table {
+    margin: auto;
+    width: 90%;
+    border-collapse: collapse; /* Ensures that the border is neat */
+    margin-top: 20px;
+}
+
+.user-table th, .user-table td {
+    border: 1px solid #ddd; /* Light gray border for readability */
+    padding: 10px;
+    text-align: left;
+}
+
+.user-table th {
+    background-color: #f4f4f4; /* Light gray background for headers */
+}
+
+.user-table td {
+    vertical-align: middle; /* Aligns content of the cell to the middle vertically */
+}
+
+.action-icons {
+    display: flex; /* Aligns SVGs in a row */
+    align-items: center; /* Centers SVGs vertically */
+    justify-content: space-around; /* Provides space around the SVGs */
+}
+
+.action-icons svg {
+    fill: #78c2ff; /* Default fill color */
+    cursor: pointer; /* Changes cursor to pointer when hovering over the icon */
+    transition: fill 0.3s; /* Smooth transition for fill color change */
+}
+
+.action-icons svg:hover {
+    fill: #0056b3; /* Darker blue on hover to indicate interactivity */
+}
+
+
+.pagination-Gestion {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.pagination-Gestion button {
+    margin: 0 5px;
+    padding: 5px 10px;
+    background-color: #f4f4f4;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+
+.pagination-Gestion button:hover {
+    background-color: #e2e2e2;
+}
+
+.input-error {
+    border: 1px solid red !important;
+}
+
+.errorIdentical{
+    color: red ;
+    font-size: smaller;
+    width: 80%;
+    text-align: start;
+}
+.swal2-confirm {
+    width: 70px !important;  /* ou toute autre largeur selon vos besoins */
+  }
+  
+  .form-add-row.inputUpdate {
+    position: relative;
+  }
+  
+  .password-toggle-icon {
+    position: absolute;
+    right: 10px;
+    top: 75%;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+
+  .inputUpdate {
+    width: 60% ;
+   }
+
+@media (max-width: 767px) { /* Ajustez la largeur de l'écran en fonction de vos besoins */
+    .password-toggle-icon1 {
+      right: 15px; /* Ajustez la valeur pour le positionnement sur mobile */
+    }
+    .ajoutReliquat{
+        width: 100%;
+       }
+    .form-add-row select{
+        width: 100% !important;
+    }
+    .inputUpdate {
+        width: 100% !important;
+    }
+    .inputUpdate select{
+        width: 100% !important;
+    }
+    .reliquatUpdate select{
+        width: 100% !important;
+    }
+    .reliquatUpdate input{
+        width: 100% !important;
+    }
+  }
+  
+@media (min-width: 1072px) {
+    .GestionCompte {
+        margin-left: 20%;
+    }
+}
+@media (max-width: 600px) {
+    .form-add-user {
+        width: 90%; /* Make form wider on smaller screens */
+        padding: 10px;
+    }
+
+    .form-add-row .form-group {
+        flex: 1 1 100%; /* Each input takes full width on small screens */
+        min-width: 0; /* No minimum width needed on small screens */
+    }
+
+    .form-add-user input {
+        padding: 8px;
+    }
+}
+
+
+/* Media queries pour différents points de rupture */
+@media (max-width: 768px) { /* Pour tablettes et petits écrans */
+  .GestionCompte {
+    margin-left: 5%;
+  }
+
+  .container {
+    padding: 10px;
+  }
+
+  .box {
+    width: 90%; /* Augmentation de la largeur sur petits écrans */
+    margin-top: 10%; /* Réduction de la marge supérieure */
+  }
+}
+
+@media (max-width: 480px) { /* Pour smartphones */
+  .GestionCompte {
+    margin-left: 2%;
+  }
+
+  .box {
+    height: 150px; /* Hauteur ajustée pour les très petits écrans */
+    font-size: 14px; /* Ajustement de la taille de la police */
+  }
+}
+

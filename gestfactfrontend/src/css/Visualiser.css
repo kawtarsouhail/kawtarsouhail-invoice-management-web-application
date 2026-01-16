@@ -1,0 +1,229 @@
+.Visualiser{
+  margin-left: 20%;
+}
+center h2{
+    margin-top: 5%;
+    color: var(--sidebar-color);
+}
+.form-group {
+  display: flex;
+  align-items: center; /* Alignement vertical des éléments dans la même ligne */
+  justify-content: center; /* Alignement horizontal des éléments dans la même ligne */
+  margin-bottom: 20px;
+  width: 90%;
+  padding-top: 2%;
+  margin: auto;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+
+.form-group label {
+  color: #007bff; /* Couleur du label */
+  margin:1%; /* Espacement entre le label et l'input/select */
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+#itemsPerPageSelect{
+  margin-left: 5%;
+  margin-top: 0%;
+  margin-bottom: 0%;
+}
+
+/* Base styles */
+input[type="text"],
+select {
+  flex: 1; /* Prendre l'espace restant */
+  padding: 8px; /* Ajustement du padding au besoin */
+  border: 1px solid #ced4da; /* Couleur de la bordure de l'input/select */
+  border-radius: 4px; /* Coins arrondis */
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out; /* Transition lisse pour la couleur de la bordure */
+  margin: auto;
+  background-color: white;
+}
+
+/* Effet au survol */
+input[type="text"]:hover,
+select:hover {
+  border-color: #6c757d; /* Couleur de la bordure au survol */
+}
+
+/* Effet de focus */
+input[type="text"]:focus,
+select:focus {
+  border-color: #007bff; /* Couleur de la bordure au focus */
+  outline: 0; /* Supprimer le contour */
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25); /* Ajouter une ombre sur le focus */
+}
+
+.date-filters {
+  display: flex;
+  justify-content: center; /* Centre horizontalement */
+  align-items: center;     /* Centre verticalement */
+  gap: 10px;               /* Espace entre les éléments */
+  padding: 2px;           /* Ajoute du padding */
+}
+
+.date-filters input {
+  width: 150px; /* Ajustez la largeur selon vos besoins */
+  padding: 8px; /* Même padding que les autres inputs */
+  border: 1px solid #ced4da; /* Même bordure */
+  border-radius: 4px; /* Coins arrondis */
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out; /* Effets de transition */
+  box-shadow: none; /* Pas d'ombre par défaut */
+}
+
+.date-filters label {
+  color: #007bff; /* Couleur du label, similaire aux autres */
+  margin: 1%; /* Espacement pour cohérence */
+}
+
+#itemsPerPageSelect {
+  margin-left: 5%; /* Espace comme les autres inputs */
+  padding: 8px; /* Même padding que les autres */
+  border: 1px solid #ced4da; /* Même bordure */
+  border-radius: 4px; /* Coins arrondis */
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out; /* Effets de transition */
+}
+
+/* Effet au survol */
+.date-filters input:hover {
+  border-color: #6c757d; /* Bordure grise au survol */
+}
+
+/* Effet de focus */
+.date-filters input:focus {
+  border-color: #007bff; /* Bordure bleue au focus */
+  outline: none; /* Supprime le contour par défaut */
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25); /* Ombre au focus */
+}
+.total-montant{
+  font-size: large;
+  text-align: center;
+}
+
+
+/* Reset Date Button Styling */
+.resetDateBtn {
+  display: inline-flex; /* Aligns the SVG centrally in the div */
+  justify-content: center; /* Centers content horizontally */
+  align-items: center; /* Centers content vertically */
+  width: 30px; /* Specific width for the button */
+  height: 30px; /* Specific height for the button */
+  background-color: var(--sidebar-color); /* Light grey background */
+  border-radius: 25px; /* Fully rounded corners to form a circle */
+  cursor: pointer; /* Cursor indicates it is clickable */
+  transition: background-color 0.3s, transform 0.2s; /* Smooth transition for hover effects */
+}
+
+.resetDateBtn:hover {
+  background-color: #e0e0e0; /* Darker grey on hover */
+  transform: scale(1.1); /* Slightly larger on hover */
+}
+
+.resetDateBtn:active {
+  transform: scale(0.95); /* Slightly smaller when clicked */
+}
+
+.resetDateBtn svg {
+  fill: #78c2ff; /* SVG color, matching your stroke color */
+  transition: fill 0.3s; /* Smooth color transition */
+}
+
+.resetDateBtn:hover svg {
+  fill: #4a9cd6; /* Darker blue on hover */
+}
+.loader-center{
+  margin-top: 25% !important;
+  margin-left: 55% !important;
+}
+@media (max-width: 1062px) {
+  .loader-center{
+    margin-top: 25% !important;
+    margin-left: 45% !important;
+  }
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+  .date-filters {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centre horizontalement */      
+  }
+  .form-group {
+    flex-direction: column; /* Change la direction en colonne pour les petits écrans */
+    width: 80%; /* Ajuste la largeur à 100% */
+  }
+
+  .form-group label {
+    margin: 2% 0; /* Ajuste l'espacement entre le label et l'input/select */
+  }
+
+  input[type="text"],
+  select {
+    /* width: 100%; Ajuste la largeur à 100% pour les petits écrans */
+    margin-bottom: 10px; /* Ajoute un espacement entre les inputs/selects */
+  }
+}
+/* Base styles for table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 8px;
+  border: 1px solid #ddd;
+}
+
+/* Media query for responsiveness */
+@media (max-width: 1072px) {
+  .Visualiser{
+    margin-left: 0%;
+  }
+  #itemsPerPageSelect{
+    margin-left: 0%;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    width: 15%;
+    margin: auto;
+  }
+  /* Hide the table header cells */
+  th {
+    display: none;
+  }
+
+  /* Display the table rows as blocks */
+  tr {
+    display: block;
+    border-bottom: 1px solid #ddd;
+  }
+
+  /* Display table data cells as blocks */
+  td {
+    display: block;
+    text-align: left;
+    border: none;
+  }
+
+  /* Add padding to each data cell */
+  td:before {
+    content: attr(data-label);
+    font-weight: bold;
+    display: inline-block;
+    width: 40%;
+    margin-right: 10px;
+  }
+}
+.exportButton{
+  margin : auto !important;
+  display: flex;
+  justify-content: center;
+  width: 50%;
+}
+.exportButton button {
+  margin-top: 5%;
+}

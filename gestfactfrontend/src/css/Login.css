@@ -1,0 +1,232 @@
+body{
+    margin: 0;
+}
+.Mycontainer {
+  display: flex;
+}
+
+.Mycolumn {
+  flex: 1; /* Chaque colonne prendra 50% de la largeur de l'écran */
+  box-sizing: border-box; /* Pour inclure le padding dans la largeur */
+}
+
+.image {
+  min-height: 100vh;
+}
+
+.bg-image {
+  background-image: url('../Ressources/loginImg.jpg');
+  background-size: cover;
+  background-position:center center;
+}
+
+.login {
+  margin: auto;
+  padding-left: 25%;
+  margin-top: 28%;
+  animation: slideIn 0.5s ease forwards;
+}
+
+
+.login h3 {
+  font-size: 2.2rem;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: #477eec;
+  margin-bottom: 0.5rem;
+}
+
+.login p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  color: grey;
+}
+
+.login .Myform-group {
+  margin-bottom: 1.5rem;
+}
+
+.login input[type="email"],
+.login input[type="text"],
+.login input[type="password"] {
+  font-size: 1rem;
+  padding: 0.5rem; /* J'ai augmenté le padding pour un meilleur aspect */
+  padding-left: 1rem;
+  width: 75%;
+  margin-bottom: 2%;
+  border-radius: 20px;
+  border: 1px solid #ccc; /* Ajoute une bordure pour une meilleure visibilité */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Ajoute une ombre */
+}
+
+
+.login input[type="email"]:focus,
+.login input[type="text"],
+.login input[type="password"]:focus {
+  outline: none; /* Supprime le contour par défaut lorsqu'il est en focus */
+  border-color: #007bff; /* Change la couleur de la bordure lorsqu'il est en focus */
+}
+
+
+.login .form-check-input {
+  margin-top: 0.4rem;
+  margin-right: 0.5rem;
+  animation: fadeIn 0.5s ease forwards;
+}
+
+/* Style personnalisé pour la case à cocher */
+.login .form-check-input[type="checkbox"] {
+  width: 1rem; /* Taille de la case à cocher */
+  height: 1rem; /* Taille de la case à cocher */
+  position: relative;
+  top: 2px; /* Ajustement pour aligner verticalement avec le texte */
+}
+
+.login .form-check-input[type="checkbox"]::before {
+  content: ""; /* Contenu vide pour la case à cocher */
+  display: block;
+  width: 1rem; /* Taille de la case à cocher */
+  height: 1rem; /* Taille de la case à cocher */
+  border: 1px solid #ccc; /* Bordure de la case à cocher */
+  border-radius: 3px; /* Bord arrondi */
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #fff; /* Couleur de fond */
+}
+
+.login .form-check-input[type="checkbox"]:checked::before {
+  background-color: #007bff; /* Couleur de fond lorsque la case est cochée */
+}
+
+.login .form-check-input[type="checkbox"]:checked::after {
+  content: "\2713"; /* Symbole de coche Unicode */
+  font-size: 1rem; /* Taille de la police */
+  color: #fff; /* Couleur du symbole de coche */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Centrer le symbole de coche */
+}
+.form-check-label {
+  font-size:smaller;
+}
+
+
+.Mybtn {
+  width: auto;
+  padding: 5%;
+  padding-top: 0.5%;
+  padding-bottom: 0.5%; /* Ajustez le rembourrage selon vos besoins */
+  border: none;
+  border-radius: 20px; /* Utilisez la même valeur de rayon de bordure que Bootstrap */
+  background-color: #007bff;
+  color: #fff;
+  font-size: 1.1rem;
+}
+
+.Mybtn:hover {
+  background-color: #0056b3;
+}
+
+
+.Mycontainer {
+  display: flex;
+}
+
+.Mycolumn {
+  flex: 1; /* Chaque colonne prendra 50% de la largeur de l'écran */
+  padding: 10px;
+  box-sizing: border-box; /* Pour inclure le padding dans la largeur */
+}
+
+.is-invalid {
+  border-color: #e3342f; /* A shade of red for errors */
+  background-color: #fff0f0; /* Light red background */
+}
+
+.invalid-feedback {
+  display: block; /* Make it always visible */
+  color: #e3342f; /* Red color for the error text */
+  font-size: 0.875em;
+  margin-top: 0.25rem; /* Space between input field and error message */
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Pour rendre les colonnes responsives sur les petits écrans */
+@media screen and (max-width: 600px) {
+  .Mycolumn {
+    flex: 100%; /* Chaque colonne prendra toute la largeur sur les petits écrans */
+  }
+}
+
+/* Cacher la colonne 1 lorsque la largeur de l'écran est inférieure à 600px */
+@media screen and (max-width: 600px) {
+  .Mycolumn:first-child {
+    display: none;
+  }
+}
+@media screen and (max-width: 600px) {
+    .Main-login {
+        background-image: url('../Ressources/loginImg.jpg');
+        background-position: center center;
+        background-size: cover;
+        background-color: rgba(255, 255, 255, 0.8); /* Arrière-plan semi-transparent */
+        height: 100vh;
+    }
+    
+    .Mycolumn {
+        flex: 100%;
+    }
+  
+    .Mycolumn:first-child {
+        display: none;
+    }
+  
+    .login {
+        margin: auto;
+        margin-top:40%;
+        padding-left: 0; /* Élimine le padding gauche */
+        width: 95%; /* Ajuste la largeur du formulaire */
+        background-color: rgba(255, 255, 255, 0.95); /* Fond du formulaire plus opaque */
+        padding: 20px; /* Ajout de rembourrage pour améliorer la lisibilité */
+        border-radius: 10px; /* Coins arrondis pour un aspect plus moderne */
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Ombre pour définir le formulaire */
+    }
+    .login input[type="email"],
+    .login input[type="text"],
+    .login input[type="password"] {
+        width: 100%;
+        font-size: 1rem;
+        padding: 0.5rem; /* J'ai augmenté le padding pour un meilleur aspect */
+        padding-left: 1rem;
+        width: 100%;
+        margin-bottom: 5%;
+
+    }
+    .Mybtn {
+        width: 100%;
+      }
+}
+
+  

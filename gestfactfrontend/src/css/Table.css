@@ -1,0 +1,384 @@
+
+.table-container {
+  margin-top: 20px;
+}
+
+.table {
+  width: 90%;
+  border-collapse: collapse;
+  border: 1px solid #dee2e6;
+  border-radius: 4px;
+  margin: auto;
+}
+
+.table th,
+.table td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #dee2e6;
+}
+
+.table th {
+  background-color: #f8f9fa;
+  vertical-align: middle;
+  border-bottom: 2px solid #dee2e6;
+}
+
+.table thead th {
+  border-bottom: 2px solid #dee2e6;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  padding-bottom: 30px;
+}
+
+.page-item {
+  margin: 0 2px;
+}
+
+.page-link {
+  padding: 6px 12px;
+  border: 1px solid #dee2e6;
+  border-radius: 4px;
+  cursor: pointer;
+  color: #007bff;
+  background-color: #fff;
+  width: fit-content;
+}
+
+.page-link:hover {
+  background-color: #f8f9fa;
+}
+
+.page-link:focus {
+  box-shadow: none;
+}
+
+.page-item.active .page-link {
+  z-index: 1;
+  color: #fff;
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.page-item.disabled .page-link {
+  color: #6c757d;
+  pointer-events: none;
+  cursor: auto;
+  background-color: #fff;
+  border-color: #dee2e6;
+}
+
+.btn {
+  display: inline-block;
+  font-weight: 400;
+  color: #212529;
+  text-align: center;
+  vertical-align: middle;
+  user-select: none;
+  background-color: transparent;
+  border: 1px solid transparent;
+  padding: 0.3rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: 0.25rem;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+  border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  width: 100%;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.btn-primary:hover {
+  color: #fff;
+  background-color: green;
+  border-color: #0062cc;
+}
+
+
+/* Modal container */
+.modal {
+  display: block; /* Hide by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 80%; /* Full width */
+  height: 100%; /* Full height */
+  margin-left:20%;
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(0, 0, 0, 0.4); /* Black background with opacity */
+}
+
+/* Modal container */
+.modal-content {
+  background-color: white;
+  margin: 10% auto; /* 10% from the top and centered */
+  padding: 20px;
+  border: 1.5px solid #78c2ff; /* Bordure verte */
+  border-radius: 10px; /* Coins arrondis */
+  width: 80%; /* Could be more or less, depending on screen size */
+  position: relative; /* Ensure the close button's absolute position relative to this container */
+  box-shadow: 0 4px 8px rgb(120, 194, 255,0.1); /* Légère ombre portée */
+}
+
+
+.modal-delete {
+  display: block; /* Hide by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 80%; /* Full width */
+  height: 100%; /* Full height */
+  margin-left:20%;
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(0, 0, 0, 0.4); /* Black background with opacity */
+}
+
+/* Modal container */
+.modal-delete .modal-content {
+  background-color: white;
+  margin: 20% auto; /* 10% from the top and centered */
+  padding: 20px;
+  border: 1.5px solid #78c2ff; /* Bordure verte */
+  border-radius: 10px; /* Coins arrondis */
+  width: 50%; /* Could be more or less, depending on screen size */
+  position: relative; /* Ensure the close button's absolute position relative to this container */
+  box-shadow: 0 4px 8px rgb(120, 194, 255,0.1); /* Légère ombre portée */
+}
+
+.modal-delete .btn-delete:hover{
+  background-color: red;
+}
+/* Close button */
+.close {
+  color: #78c2ff; /* Couleur verte */
+  font-size: 24px;
+  font-weight: bold;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  cursor: pointer;
+  transition: color 0.3s; /* Transition fluide */
+}
+
+.close:hover {
+  color: red; /* Couleur verte plus foncée au survol */
+}
+
+/* Styles pour le conteneur de chaque élément de la modal */
+.modal-items {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap; /* Permet aux éléments de passer à la ligne si nécessaire */
+}
+
+/* Styles pour chaque élément de la modal */
+.modal-item {
+  margin-bottom: 10px;
+  flex: 0 0 50%; /* Met deux éléments par ligne */
+  max-width: 50%; /* Limite la largeur à 50% pour deux éléments par ligne */
+}
+
+/* Styles pour chaque label */
+.modal-item p {
+  margin: 0;
+  font-weight: bold;
+}
+
+/* Styles pour chaque valeur */
+.modal-item span {
+  font-weight: normal;
+}
+.Update-Modal .modal-content{
+  margin-top: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+  width:50%
+}
+.Update-Modal .modal-content input{
+  margin-top: 5%;
+  margin-bottom: 2%;
+  height: 30px;
+}
+/* Styles spécifiques pour chaque élément de la modal */
+.facture {
+  color: #FF5733; /* Couleur pour Nº de Facture */
+}
+
+.client {
+  color: #3498DB; /* Couleur pour Nom Client */
+}
+
+.bon {
+  color: #27AE60; /* Couleur pour Nº Bon de livraison */
+}
+
+.validation {
+  color: #F1C40F; /* Couleur pour Type de validation */
+}
+
+.reglement {
+  color: #9B59B6; /* Couleur pour Mode de Règlement */
+}
+.actions{
+  display: flex;
+  justify-content: space-around;
+}
+.actions svg{
+  padding: 3%;
+}
+
+/* Style du conteneur de l'icône et positionnement relatif pour l'infobulle */
+.tooltip {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+/* Style de l'infobulle cachée */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: auto; /* Adjust width based on content */
+  background-color:white;
+  color: black;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  
+  /* Positionnement */
+  position: absolute;
+  z-index: 1;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  
+  /* Fade-in */
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+/* Flèche sous l'infobulle */
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: black transparent transparent transparent;
+}
+
+/* Afficher l'infobulle lors du survol */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+.modal-item {
+  margin-bottom: 10px;
+}
+
+.modal-item label {
+  display: flex;
+  margin-bottom: 5px;
+}
+
+.modal-item input {
+  width: 80%;
+  padding: 8px;
+  box-sizing: border-box;
+}
+.modal button{
+  padding: 1%;
+  margin-top: 3%;
+  margin-left: 40%;
+  width: 30% ;
+}
+.MontantEncColumn{
+  display: flex;
+  justify-content: space-between;
+}
+
+.password-input-container {
+  position: relative;
+  width: 90%;
+}
+
+.password-input-container input {
+  width: 90%;
+  padding-right: 30px; /* Espace pour l'icône à droite */
+  box-sizing: border-box; /* Assurez-vous que le padding est inclus dans la largeur totale */
+}
+
+.password-toggle-iconUpdate {
+  position: absolute;
+  right: 15%; /* Positionner l'icône à droite à l'intérieur du champ */
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.reliquatUpdate input{
+  margin-right: 20% !important;
+}
+.reliquatUpdate select{
+  margin-right: 20% !important;
+}
+/* Media query pour rendre la modal responsive */
+@media (max-width: 768px) {
+  .modal-item {
+    flex: 0 0 100%; /* Affiche un élément par ligne sur les écrans plus petits */
+    max-width: 100%; /* Ajuste la largeur à 100% pour un élément par ligne */
+  }
+}
+
+@media (max-width: 1072px) {
+  .modal {
+    margin-left:0%;
+    width: 100%; 
+  }
+  .modal-content {
+    margin-top: 20%;
+  }
+  .modal-delete {
+    margin-left:0%;
+    width: 100%; 
+  }
+  .modal-delete .modal-content {
+    margin-top: 40%;
+    width: 80%;
+  }
+  .btns{
+    display: flex;
+  }
+}
+
+/* Style pour le select */
+.selectrole {
+  width: 80%;
+  padding: 8px;
+  box-sizing: border-box;
+  border-radius: 4px;
+  font-size: 1rem;
+  line-height: 1.5;
+  background-color: white;
+  color: #495057;
+}

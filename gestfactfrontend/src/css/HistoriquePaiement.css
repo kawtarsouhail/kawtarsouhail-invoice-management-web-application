@@ -1,0 +1,97 @@
+.TableauReliquat th {
+  background-color: #00516a !important;
+  vertical-align: middle;
+  border-bottom: 2px solid #dee2e6;
+  color: white;
+}
+.Search{
+    display: block!important;
+    width: 30%;
+    margin: auto !important;
+}
+.Search input{
+    width: 100% !important;
+    border-color: #00516a !important ;
+}
+
+.Search input[type="text"]::placeholder{
+    text-align: center;
+    color: #00516a;
+}
+
+/* .styleReliquat .box{
+    background-color: #0191bc !important;
+} */
+.TableauReliquat {
+    width: 90%;
+  }
+
+center h4{
+    margin-top: 5%;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: medium;
+    color: #00516a;
+}
+
+.Search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .Search input {
+    width: 300px;
+    padding-right: 40px; /* Espace pour les icônes */
+  }
+  
+  .Search .faSearch,
+  .Search .faTimes {
+    position: relative;
+    right: 30px; /* Décalage des icônes vers la droite */
+    font-size: 1.2em; /* Taille des icônes */
+    color: #0077b6; /* Couleur bleue */
+    cursor: pointer;
+  }
+  .searchButtonInside{
+    display: flex ;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items: center;
+  }
+  .searchButton button{
+    width:50% !important;
+    margin-top: 5%;
+  }
+  .searchButton svg{
+    margin-top:40%;
+  }
+  /* HTML: <div class="loader"></div> */
+  .loader {    
+    margin: auto;
+    margin-top: 5%;
+    --r1: 154%;
+    --r2: 68.5%;
+    width: 60px;
+    aspect-ratio: 1;
+    border-radius: 50%; 
+    background:
+      radial-gradient(var(--r1) var(--r2) at top   ,#0000 79.5%,#269af2 80%),
+      radial-gradient(var(--r1) var(--r2) at bottom,#269af2 79.5%,#0000 80%),
+      radial-gradient(var(--r1) var(--r2) at top   ,#0000 79.5%,#269af2 80%),
+      #ccc;
+    background-size: 50.5% 220%;
+    background-position: -100% 0%,0% 0%,100% 0%;
+    background-repeat:no-repeat;
+    animation: l9 2s infinite linear;
+  }
+  @keyframes l9 {
+      33%  {background-position:    0% 33% ,100% 33% ,200% 33% }
+      66%  {background-position: -100%  66%,0%   66% ,100% 66% }
+      100% {background-position:    0% 100%,100% 100%,200% 100%}
+  }
+  @media (max-width: 768px) {
+    .searchButton button{
+      width:100% !important;
+      margin-top: 5%;
+    }
+  }
