@@ -30,7 +30,22 @@ Le projet est organisé en **monorepo**, avec un **backend Laravel** et un **fro
   - Gestion des comptes utilisateurs
   - Ajout, suppression et modification des mots de passe
 
----
+## 📸 Aperçu de l’application
+
+### 🔐 Authentification
+![Login](screenshots/login.png)
+
+### 📱 Présentation de l’application sur mobile
+![Mobile View](screenshots/tele.png)
+
+### 📱 Présentation de l’application sur tablette (iPad)
+![Tablet View](screenshots/ipad.png)
+
+### ⚙️ Actions principales de l’application
+![Dashboard](screenshots/image2.png)
+
+### 🧾 Gestion des factures
+![Invoices](screenshots/list.png)
 
 ## 🏗️ Architecture du projet
 
